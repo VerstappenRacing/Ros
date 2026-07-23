@@ -4,7 +4,7 @@
   <name>tf2_basic</name>
   <version>0.0.0</version>
   <description>tf2 basic for tutorial</description>
-  <maintainer email="rooney010727@gmail.com">ver</maintainer>
+  <maintainer email="freshmea@naver.com">choisugil</maintainer>
   <license>Apache 2.0</license>
 
   <test_depend>ament_copyright</test_depend>
