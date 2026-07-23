@@ -48,7 +48,8 @@ setup(
             "my_param = ver_basic.my_param:main",
             "param_async = ver_basic.param_async:main",
             "action_server = ver_basic.action_server:main",
-            "action_client = gong_basic.action_client:main",
+            "action_client = ver_basic.action_client:main",
+            "mv_turtle_ns = ver_basic.mv_turtle_ns:main",
         ],
     },
 )
