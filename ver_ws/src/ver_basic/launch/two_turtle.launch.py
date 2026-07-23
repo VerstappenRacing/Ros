@@ -10,7 +10,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     param_dir = LaunchConfiguration(
         "param_dir",
-        default=os.path.join(get_package_share_directory("ver_basic"), "param", "turtlesim.yaml"),
+        default=os.path.join(get_package_share_directory("gong_basic"), "param", "turtlesim.yaml"),
     )
     return LaunchDescription(
         [
@@ -32,13 +32,13 @@ def generate_launch_description():
                 output="screen",
             ),
             Node(
-                package="ver_basic",
+                package="gong_basic",
                 executable="mv_turtle_ns",
                 namespace="turtle1",
                 parameters=[param_dir],
             ),
             Node(
-                package="ver_basic",
+                package="gong_basic",
                 executable="mv_turtle_ns",
                 namespace="turtle2",
                 parameters=[param_dir],
