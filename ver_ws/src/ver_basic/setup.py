@@ -1,6 +1,8 @@
-from setuptools import find_packages, setup
 import os
 from glob import glob
+
+from setuptools import find_packages, setup
+
 package_name = 'ver_basic'
 
 setup(
@@ -19,7 +21,7 @@ setup(
     maintainer='ver',
     maintainer_email='rooney010727@gmail.com',
     description='TODO: Package description',
-    license='TODO: License declaration',
+    license='Apache 2.0',
     extras_require={
         'test': [
             'pytest',
@@ -33,6 +35,9 @@ setup(
             'header_pub = ver_basic.header_pub:main', # t_pub (토픽: "time")
             'm2_sub = ver_basic.m2_sub:main',         # 추가된 m2_sub
             'mt_sub = ver_basic.mt_sub:main',         # 추가된 mt_sub
+            "mpub = gong_basic.mpub:main",
+            "tpub = gong_basic.tpub:main",
+            "msub = gong_basic.msub:main",
             "mv_turtle = ver_basic.mv_turtle:main",
             "qos_test_pub = ver_basic.qos_test_pub:main",
             "qos_test_sub = ver_basic.qos_test_sub:main",
@@ -43,6 +48,7 @@ setup(
             "my_param = ver_basic.my_param:main",
             "param_async = ver_basic.param_async:main",
             "action_server = ver_basic.action_server:main",
+            "action_client = gong_basic.action_client:main",
         ],
     },
 )
