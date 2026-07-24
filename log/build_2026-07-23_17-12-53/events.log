@@ -1,4 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000261] (-) JobUnselected: {'identifier': 'gong_basic'}
-[0.000333] (-) JobUnselected: {'identifier': 'user_interface'}
-[0.000512] (-) EventReactorShutdown: {}

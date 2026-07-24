@@ -1,1 +1,0 @@
-/home/ver/Ros/ver_ws/build/user_interface/rosidl_generator_cpp/user_interface/msg/detail/user_int__type_support.hpp

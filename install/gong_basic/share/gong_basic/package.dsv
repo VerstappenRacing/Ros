@@ -1,9 +1,0 @@
-source;share/gong_basic/hook/pythonpath.ps1
-source;share/gong_basic/hook/pythonpath.dsv
-source;share/gong_basic/hook/pythonpath.sh
-source;share/gong_basic/hook/ament_prefix_path.ps1
-source;share/gong_basic/hook/ament_prefix_path.dsv
-source;share/gong_basic/hook/ament_prefix_path.sh
-source;../../build/gong_basic/share/gong_basic/hook/pythonpath_develop.ps1
-source;../../build/gong_basic/share/gong_basic/hook/pythonpath_develop.dsv
-source;../../build/gong_basic/share/gong_basic/hook/pythonpath_develop.sh

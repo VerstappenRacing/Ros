@@ -1,1 +1,0 @@
-/home/ver/Ros/ver_ws/build/user_interface/rosidl_generator_rs/user_interface/rust/src/srv/rmw.rs

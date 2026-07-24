@@ -2,7 +2,6 @@ Metadata-Version: 2.1
 Name: tf2-basic
 Version: 0.0.0
 Summary: tf2 basic code for tutorial
-Maintainer: choisugil
-Maintainer-email: freshmea@naver.com
+Maintainer: ver
+Maintainer-email: rooney010727@gmail.com
 License: Apache 2.0
-Provides-Extra: test

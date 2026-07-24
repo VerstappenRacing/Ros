@@ -1,1 +1,0 @@
-/home/ver/Ros/ver_ws/build/gong_basic/launch/two_turtle.launch.py

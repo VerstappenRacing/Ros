@@ -1,1 +1,0 @@
-/home/ver/Ros/ver_ws/build/ver_basic/launch/param.launch.py

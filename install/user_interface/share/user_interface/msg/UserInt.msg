@@ -1,1 +1,0 @@
-/home/ver/Ros/ver_ws/src/user_interface/msg/UserInt.msg
