@@ -6,6 +6,8 @@
 # ros2 run turtlesim turtle_teleop_key
 
 import rclpy
+from geometry_msgs.msg import TransformStamped
+from rclpy.duration import Duration
 from rclpy.node import Node
 from tf2_ros import TransformException
 from tf2_ros.buffer import Buffer
@@ -13,28 +15,27 @@ from tf2_ros.transform_listener import TransformListener
 
 class FrameListener(Node):
     def __init__(self):
-        super().__init__('tf_listener')
+        super().__init__('dynamic_tf')
+        self.target_frame = (self.declare_parameter("target_frame", "joint2").get_parameter_value().string_value)
+        self.source_frame = (self.declare_parameter("source_frame", "world").get_parameter_value().string_value)
         self.tf_buffer = Buffer()
         self.tf_listener = TransformListener(self.tf_buffer, self)
-        self.timer = self.create_timer(0.5, self.on_timer)
+        self.create_timer(1.0, self.timer_callback)
 
-    def on_timer(self):
-        try:
-            t = self.tf_buffer.lookup_transform('world', 'turtle1', rclpy.time.Time())
-            self.get_logger().info(f'turtle1 pos -> x: {t.transform.translation.x:.2f}, y: {t.transform.translation.y:.2f}')
-        except TransformException as ex:
-            self.get_logger().info(f'Transform waiting: {ex}')
+    def timer_callback(self):
+        t = TransformStamped = self.tf_buffer.lookup_transfrom(self.target_frame, self.source_frame, Time(), timeout=Duration(seconds=1.0))
+        self.get_logger().info(f"{t}")
 
 def main(args=None):
     rclpy.init(args=args)
-    node = FrameListener()
+    node = M_pub()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:
-        pass
+        print("키보드 인터럽트")
     finally:
         node.destroy_node()
-        rclpy.shutdown()
+        
 
 if __name__ == '__main__':
     main()

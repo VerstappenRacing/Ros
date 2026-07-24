@@ -31,16 +31,19 @@ class M_pub(Node):
     def __init__(self):
         super().__init__("dynamic_tf")  # 노드 이름
         # timer 등록
-        self.transformation = [1.0, 1.0, 0.0, 0.0, 0.0, np.pi / 6]
-        self.transformation2 = [1.0, 1.0, 1.0, 0.0, 0.0, -np.pi / 6]
+        self.declare_parameter("turtle_name", "turtle1")
+        self.turtle_name = self.get_parameter("turtle_name").value
+
         self.tf_broadcaster = TransformBroadcaster(self)
-        self.create_subscription(Pose, "turtle1/pose", self.pose_callback, 10)
+        self.create_subscription(Pose, f"/{self.turtle_name}/pose", self.pose_callback, 10,)
+
+        self.get_logger().info(f"토픽 구독: /{self.turtle_name}/pose")
 
     def pose_callback(self, msg: Pose):
         t = TransformStamped()
         t.header.stamp = self.get_clock().now().to_msg()
         t.header.frame_id = "world"  # 중요!!(상위 tf2 명시)
-        t.child_frame_id = "turtle1"
+        t.child_frame_id = self.turtle_name
         x, y, z, w = euler_to_quaternion_pure(0.0, 0.0, msg.theta)
         t.transform.translation.x = msg.x
         t.transform.translation.y = msg.y
@@ -61,6 +64,7 @@ def main(args=None):
         print("키보드 인터럽트")
     finally:
         node.destroy_node()
+        rclpy.try_shutdown()
 
 
 if __name__ == "__main__":
