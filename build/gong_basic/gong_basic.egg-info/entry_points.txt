@@ -1,0 +1,23 @@
+[console_scripts]
+action_client = gong_basic.action_client:main
+action_server = gong_basic.action_server:main
+action_thread_server = gong_basic.action_thread_server:main
+class_pub = gong_basic.class_pub:main
+class_sub = gong_basic.class_sub:main
+header_pub = gong_basic.header_pub:main
+m2sub = gong_basic.m2sub:main
+mpub = gong_basic.mpub:main
+msub = gong_basic.msub:main
+mtsub = gong_basic.mtsub:main
+mv_turtle = gong_basic.mv_turtle:main
+mv_turtle_ns = gong_basic.mv_turtle_ns:main
+my_param = gong_basic.my_param:main
+param_async = gong_basic.param_async:main
+qos_test_pub = gong_basic.qos_test_pub:main
+qos_test_sub = gong_basic.qos_test_sub:main
+service_client = gong_basic.service_client:main
+service_server = gong_basic.service_server:main
+service_thread_server = gong_basic.service_thread_server:main
+simple_pub = gong_basic.simple_pub:main
+tpub = gong_basic.tpub:main
+user_int_pub = gong_basic.user_int_pub:main

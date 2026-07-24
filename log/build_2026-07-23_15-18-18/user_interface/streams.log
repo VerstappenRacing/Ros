@@ -1,0 +1,281 @@
+[0.013s] Invoking command in '/home/ver/Ros/ver_ws/build/user_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ver/Ros/ver_ws/install/ver_basic:/opt/ros/jazzy /usr/bin/cmake /home/ver/Ros/ver_ws/src/user_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ver/Ros/ver_ws/install/user_interface
+[0.075s] -- The C compiler identification is GNU 13.3.0
+[0.457s] -- The CXX compiler identification is GNU 13.3.0
+[0.667s] -- Detecting C compiler ABI info
+[0.782s] -- Detecting C compiler ABI info - done
+[0.788s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.788s] -- Detecting C compile features
+[0.788s] -- Detecting C compile features - done
+[0.827s] -- Detecting CXX compiler ABI info
+[0.962s] -- Detecting CXX compiler ABI info - done
+[0.969s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.969s] -- Detecting CXX compile features
+[0.969s] -- Detecting CXX compile features - done
+[0.971s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.064s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.119s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.135s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.137s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.271s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.295s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.296s] -- Found action_msgs: 2.0.4 (/opt/ros/jazzy/share/action_msgs/cmake)
+[1.339s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.763s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.084s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.502s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.503s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[2.598s] -- Found PythonExtra: /usr/bin/python3  
+[2.889s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[2.952s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.954s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.967s] -- Added test 'lint_cmake' to check CMake code style
+[2.967s] -- Added test 'xmllint' to check XML markup files
+[2.970s] -- Configuring done (3.0s)
+[3.010s] -- Generating done (0.0s)
+[3.019s] -- Build files have been written to: /home/ver/Ros/ver_ws/build/user_interface
+[3.029s] Invoked command in '/home/ver/Ros/ver_ws/build/user_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ver/Ros/ver_ws/install/ver_basic:/opt/ros/jazzy /usr/bin/cmake /home/ver/Ros/ver_ws/src/user_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ver/Ros/ver_ws/install/user_interface
+[3.030s] Invoking command in '/home/ver/Ros/ver_ws/build/user_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ver/Ros/ver_ws/install/ver_basic:/opt/ros/jazzy /usr/bin/cmake --build /home/ver/Ros/ver_ws/build/user_interface -- -j16 -l16
+[3.062s] [  3%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[3.063s] [  3%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[3.070s] [  3%] Built target ament_cmake_python_symlink_user_interface
+[3.211s] running egg_info
+[3.212s] creating user_interface.egg-info
+[3.218s] [  3%] Built target user_interface__rosidl_generator_type_description
+[3.224s] writing user_interface.egg-info/PKG-INFO
+[3.225s] writing dependency_links to user_interface.egg-info/dependency_links.txt
+[3.225s] writing top-level names to user_interface.egg-info/top_level.txt
+[3.225s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.226s] writing manifest file 'user_interface.egg-info/SOURCES.txt'
+[3.232s] [  7%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.267s] [  7%] Built target user_interface__rs
+[3.275s] reading manifest file 'user_interface.egg-info/SOURCES.txt'
+[3.276s] writing manifest file 'user_interface.egg-info/SOURCES.txt'
+[3.298s] [  7%] Built target ament_cmake_python_build_user_interface_egg
+[3.585s] [  7%] Built target user_interface__cpp
+[3.624s] [ 10%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/msg/detail/user_int__functions.c.o[0m
+[3.624s] [ 10%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/msg/detail/user_int__type_support.c.o[0m
+[3.625s] [ 12%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/srv/detail/add_and_odd__type_support.c.o[0m
+[3.625s] [ 14%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/msg/detail/user_int__description.c.o[0m
+[3.626s] [ 16%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/action/detail/fibonacci__type_support.c.o[0m
+[3.628s] [ 20%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/action/detail/fibonacci__description.c.o[0m
+[3.628s] [ 20%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/srv/detail/add_and_odd__description.c.o[0m
+[3.628s] [ 21%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/action/detail/fibonacci__functions.c.o[0m
+[3.629s] [ 23%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/srv/detail/add_and_odd__functions.c.o[0m
+[3.745s] [ 25%] [32m[1mLinking C shared library libuser_interface__rosidl_generator_c.so[0m
+[3.824s] [ 25%] Built target user_interface__rosidl_generator_c
+[3.831s] [ 30%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.831s] [ 30%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.831s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.834s] [ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.836s] [ 34%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.838s] [ 36%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.108s] [ 38%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interface/msg/user_int__type_support.cpp.o[0m
+[4.108s] [ 40%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interface/srv/add_and_odd__type_support.cpp.o[0m
+[4.108s] [ 41%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interface/action/fibonacci__type_support.cpp.o[0m
+[4.121s] [ 43%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interface/srv/add_and_odd__type_support.cpp.o[0m
+[4.123s] [ 45%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interface/action/fibonacci__type_support.cpp.o[0m
+[4.124s] [ 47%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interface/msg/user_int__type_support.cpp.o[0m
+[4.182s] [ 49%] [32m[1mLinking CXX shared library libuser_interface__rosidl_typesupport_c.so[0m
+[4.193s] [ 50%] [32mBuilding C object CMakeFiles/user_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interface/msg/detail/user_int__type_support.c.o[0m
+[4.195s] [ 52%] [32mBuilding C object CMakeFiles/user_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interface/srv/detail/add_and_odd__type_support.c.o[0m
+[4.195s] [ 54%] [32mBuilding C object CMakeFiles/user_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interface/action/detail/fibonacci__type_support.c.o[0m
+[4.202s] [ 56%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interface/msg/detail/user_int__type_support.cpp.o[0m
+[4.204s] [ 58%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interface/action/detail/fibonacci__type_support.cpp.o[0m
+[4.205s] [ 60%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interface/srv/detail/add_and_odd__type_support.cpp.o[0m
+[4.277s] [ 61%] [32m[1mLinking C shared library libuser_interface__rosidl_typesupport_introspection_c.so[0m
+[4.287s] [ 61%] Built target user_interface__rosidl_typesupport_c
+[4.365s] [ 61%] Built target user_interface__rosidl_typesupport_introspection_c
+[4.420s] [ 67%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interface/srv/detail/dds_fastrtps/add_and_odd__type_support.cpp.o[0m
+[4.420s] [ 67%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interface/msg/detail/dds_fastrtps/user_int__type_support.cpp.o[0m
+[4.420s] [ 67%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interface/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o[0m
+[4.509s] [ 69%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interface/action/detail/fibonacci__type_support_c.cpp.o[0m
+[4.510s] [ 70%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interface/srv/detail/add_and_odd__type_support_c.cpp.o[0m
+[4.511s] [ 72%] [32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interface/msg/detail/user_int__type_support_c.cpp.o[0m
+[4.995s] [ 74%] [32m[1mLinking CXX shared library libuser_interface__rosidl_typesupport_cpp.so[0m
+[5.134s] [ 76%] [32m[1mLinking CXX shared library libuser_interface__rosidl_typesupport_fastrtps_c.so[0m
+[5.141s] [ 76%] Built target user_interface__rosidl_typesupport_cpp
+[5.174s] [ 78%] [32m[1mLinking CXX shared library libuser_interface__rosidl_typesupport_introspection_cpp.so[0m
+[5.251s] [ 78%] Built target user_interface__rosidl_typesupport_fastrtps_c
+[5.289s] [ 78%] Built target user_interface__rosidl_typesupport_introspection_cpp
+[5.441s] [ 80%] [32m[1mLinking CXX shared library libuser_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.516s] [ 80%] Built target user_interface__rosidl_typesupport_fastrtps_cpp
+[5.530s] [ 80%] Built target user_interface
+[5.542s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.051s] [ 81%] Built target user_interface__py
+[6.063s] [ 87%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_py.dir/rosidl_generator_py/user_interface/msg/_user_int_s.c.o[0m
+[6.063s] [ 87%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_py.dir/rosidl_generator_py/user_interface/srv/_add_and_odd_s.c.o[0m
+[6.063s] [ 87%] [32mBuilding C object CMakeFiles/user_interface__rosidl_generator_py.dir/rosidl_generator_py/user_interface/action/_fibonacci_s.c.o[0m
+[6.211s] [ 89%] [32m[1mLinking C shared library libuser_interface__rosidl_generator_py.so[0m
+[6.298s] [ 89%] Built target user_interface__rosidl_generator_py
+[6.312s] [ 92%] [32mBuilding C object CMakeFiles/user_interface_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/user_interface/_user_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.312s] [ 92%] [32mBuilding C object CMakeFiles/user_interface_s__rosidl_typesupport_c.dir/rosidl_generator_py/user_interface/_user_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[6.312s] [ 94%] [32mBuilding C object CMakeFiles/user_interface_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/user_interface/_user_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.408s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/user_interface/user_interface_s__rosidl_typesupport_c.so[0m
+[6.442s] [100%] [32m[1mLinking C shared module rosidl_generator_py/user_interface/user_interface_s__rosidl_typesupport_introspection_c.so[0m
+[6.442s] [100%] [32m[1mLinking C shared module rosidl_generator_py/user_interface/user_interface_s__rosidl_typesupport_fastrtps_c.so[0m
+[6.500s] [100%] Built target user_interface_s__rosidl_typesupport_c
+[6.509s] [100%] Built target user_interface_s__rosidl_typesupport_introspection_c
+[6.509s] [100%] Built target user_interface_s__rosidl_typesupport_fastrtps_c
+[6.516s] Invoked command in '/home/ver/Ros/ver_ws/build/user_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ver/Ros/ver_ws/install/ver_basic:/opt/ros/jazzy /usr/bin/cmake --build /home/ver/Ros/ver_ws/build/user_interface -- -j16 -l16
+[6.523s] Invoking command in '/home/ver/Ros/ver_ws/build/user_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ver/Ros/ver_ws/install/ver_basic:/opt/ros/jazzy /usr/bin/cmake --install /home/ver/Ros/ver_ws/build/user_interface
+[6.528s] -- Install configuration: ""
+[6.529s] -- Execute custom install script
+[6.529s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/rosidl_interfaces/user_interface
+[6.535s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/msg/UserInt.json
+[6.540s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/srv/AddAndOdd.json
+[6.545s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/action/Fibonacci.json
+[6.551s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__functions.h
+[6.556s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__struct.h
+[6.561s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__type_support.h
+[6.566s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/fibonacci.h
+[6.572s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__functions.h
+[6.577s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__struct.h
+[6.582s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__type_support.h
+[6.588s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_generator_c__visibility_control.h
+[6.593s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/user_int.h
+[6.598s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/add_and_odd.h
+[6.603s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__functions.h
+[6.608s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__struct.h
+[6.613s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__type_support.h
+[6.619s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/library_path.sh
+[6.625s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/library_path.dsv
+[6.631s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h
+[6.636s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__rosidl_typesupport_fastrtps_c.h
+[6.642s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.647s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__rosidl_typesupport_fastrtps_c.h
+[6.653s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__rosidl_typesupport_introspection_c.h
+[6.658s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__rosidl_typesupport_introspection_c.h
+[6.663s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.668s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__rosidl_typesupport_introspection_c.h
+[6.673s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__builder.hpp
+[6.678s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__struct.hpp
+[6.683s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__traits.hpp
+[6.689s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__type_support.hpp
+[6.694s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/fibonacci.hpp
+[6.699s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__builder.hpp
+[6.704s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__struct.hpp
+[6.709s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__traits.hpp
+[6.714s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__type_support.hpp
+[6.719s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.726s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/user_int.hpp
+[6.731s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/add_and_odd.hpp
+[6.737s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__builder.hpp
+[6.742s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__struct.hpp
+[6.748s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__traits.hpp
+[6.753s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__type_support.hpp
+[6.758s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp
+[6.763s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__rosidl_typesupport_fastrtps_cpp.hpp
+[6.768s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.773s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__rosidl_typesupport_fastrtps_cpp.hpp
+[6.778s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp
+[6.784s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__rosidl_typesupport_introspection_cpp.hpp
+[6.789s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__rosidl_typesupport_introspection_cpp.hpp
+[6.794s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/pythonpath.sh
+[6.799s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/pythonpath.dsv
+[6.805s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface-0.0.0-py3.12.egg-info/PKG-INFO
+[6.810s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface-0.0.0-py3.12.egg-info/SOURCES.txt
+[6.815s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface-0.0.0-py3.12.egg-info/dependency_links.txt
+[6.820s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface-0.0.0-py3.12.egg-info/top_level.txt
+[6.828s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/__init__.py
+[6.834s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/_user_interface_s.ep.rosidl_typesupport_c.c
+[6.839s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/_user_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.845s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/_user_interface_s.ep.rosidl_typesupport_introspection_c.c
+[6.850s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/__init__.py
+[6.855s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/_fibonacci.py
+[6.860s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/_fibonacci_s.c
+[6.866s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/__init__.py
+[6.871s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/_user_int.py
+[6.876s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/_user_int_s.c
+[6.881s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/__init__.py
+[6.886s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/_add_and_odd.py
+[6.892s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/_add_and_odd_s.c
+[6.897s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_c.so
+[6.902s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_fastrtps_c.so
+[6.907s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_introspection_c.so
+[6.912s] -- Up-to-date symlink: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_fastrtps_c.so
+[6.912s] -- Up-to-date symlink: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_introspection_c.so
+[6.913s] -- Up-to-date symlink: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_c.so
+[6.913s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/rust_packages/user_interface
+[6.918s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/Cargo.toml
+[6.925s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/build.rs
+[6.930s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/action.rs
+[6.936s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/action/rmw.rs
+[6.941s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/lib.rs
+[6.947s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/msg.rs
+[6.952s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/msg/rmw.rs
+[6.957s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/srv.rs
+[6.962s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/srv/rmw.rs
+[6.968s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/msg/UserInt.idl
+[6.973s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/srv/AddAndOdd.idl
+[6.979s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/action/Fibonacci.idl
+[6.984s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/msg/UserInt.msg
+[6.989s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/srv/AddAndOdd.srv
+[6.994s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/action/Fibonacci.action
+[6.999s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/package_run_dependencies/user_interface
+[7.005s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/parent_prefix_path/user_interface
+[7.010s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/ament_prefix_path.sh
+[7.016s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/ament_prefix_path.dsv
+[7.021s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/path.sh
+[7.028s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/path.dsv
+[7.033s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/local_setup.bash
+[7.039s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/local_setup.sh
+[7.045s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/local_setup.zsh
+[7.050s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/local_setup.dsv
+[7.055s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/package.dsv
+[7.060s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/packages/user_interface
+[7.066s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/rosidl_cmake-extras.cmake
+[7.071s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.077s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.083s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[7.088s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/ament_cmake_export_targets-extras.cmake
+[7.094s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.099s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.104s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[7.109s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interfaceConfig.cmake
+[7.115s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interfaceConfig-version.cmake
+[7.120s] -- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/package.xml
+[7.126s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_generator_c.so
+[7.127s] -- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_generator_c.so" to ""
+[7.127s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_fastrtps_c.so
+[7.127s] -- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[7.127s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_introspection_c.so
+[7.127s] -- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_introspection_c.so" to ""
+[7.127s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_c.so
+[7.127s] -- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_c.so" to ""
+[7.127s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_fastrtps_cpp.so
+[7.128s] -- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.128s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_introspection_cpp.so
+[7.129s] -- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[7.129s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_cpp.so
+[7.129s] -- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_cpp.so" to ""
+[7.165s] Listing '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface'...
+[7.165s] Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/__init__.py'...
+[7.165s] Listing '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action'...
+[7.165s] Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/__init__.py'...
+[7.165s] Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/_fibonacci.py'...
+[7.165s] Listing '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg'...
+[7.165s] Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/__init__.py'...
+[7.165s] Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/_user_int.py'...
+[7.165s] Listing '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv'...
+[7.165s] Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/__init__.py'...
+[7.165s] Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/_add_and_odd.py'...
+[7.169s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_generator_py.so
+[7.169s] -- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_generator_py.so" to ""
+[7.169s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_cExport.cmake
+[7.169s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_cExport-noconfig.cmake
+[7.169s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_introspection_cExport.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_cExport.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_cExport-noconfig.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_cppExport.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_introspection_cppExport.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_cppExport.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[7.170s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_pyExport.cmake
+[7.171s] -- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_pyExport-noconfig.cmake
+[7.172s] Invoked command in '/home/ver/Ros/ver_ws/build/user_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ver/Ros/ver_ws/install/ver_basic:/opt/ros/jazzy /usr/bin/cmake --install /home/ver/Ros/ver_ws/build/user_interface

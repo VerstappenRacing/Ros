@@ -1,0 +1,1 @@
+/home/ver/Ros/ver_ws/build/user_interface/ament_cmake_core/user_interfaceConfig.cmake

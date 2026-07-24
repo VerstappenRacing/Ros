@@ -1,0 +1,1 @@
+/home/ver/Ros/ver_ws/build/user_interface/rosidl_typesupport_introspection_c/user_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h

@@ -1,0 +1,410 @@
+[0.000000] (-) TimerEvent: {}
+[0.000368] (user_interface) JobQueued: {'identifier': 'user_interface', 'dependencies': OrderedDict()}
+[0.000435] (ver_basic) JobQueued: {'identifier': 'ver_basic', 'dependencies': OrderedDict()}
+[0.000887] (user_interface) JobStarted: {'identifier': 'user_interface'}
+[0.004087] (ver_basic) JobStarted: {'identifier': 'ver_basic'}
+[0.011676] (user_interface) JobProgress: {'identifier': 'user_interface', 'progress': 'cmake'}
+[0.012483] (user_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/ver/Ros/ver_ws/src/user_interface', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ver/Ros/ver_ws/install/user_interface'], 'cwd': '/home/ver/Ros/ver_ws/build/user_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ver', 'GIT_ASKPASS': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ver/Ros/ver_ws/install/user_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ver', 'OLDPWD': '/home/ver/Ros/ver_ws', 'TERM_PROGRAM_VERSION': '1.130.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b512f3c1-d287-489b-8ae5-75eb4b70bb93.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/home/ver/home/ver/Ros/ver_ws', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ver/Ros/ver_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ver', 'NAME': 'Anakin', 'WSL_INTEROP': '/run/WSL/5964_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/roone/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/roone/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/roone/AppData/Local/afreeca:/mnt/c/Users/roone/AppData/Local/SOOP:/mnt/c/Users/roone/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ce445c5b69.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/ver/Ros/ver_ws/install/ver_basic:/home/ver/Ros/ver_ws/install/user_interface:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'LOCALHOST', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ver/Ros/ver_ws/build/user_interface', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ver/Ros/ver_ws/build/ver_basic:/home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages:/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ver/Ros/ver_ws/install/user_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ver/Ros/ver_ws/install/ver_basic:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'}), 'shell': False}
+[0.075537] (user_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.099950] (-) TimerEvent: {}
+[0.200171] (-) TimerEvent: {}
+[0.300416] (-) TimerEvent: {}
+[0.400642] (-) TimerEvent: {}
+[0.457797] (user_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.500794] (-) TimerEvent: {}
+[0.601153] (-) TimerEvent: {}
+[0.667361] (user_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.701223] (-) TimerEvent: {}
+[0.708643] (ver_basic) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ver/Ros/ver_ws/build/ver_basic/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ver/Ros/ver_ws/build/ver_basic', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ver', 'GIT_ASKPASS': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ver/Ros/ver_ws/install/user_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ver', 'OLDPWD': '/home/ver/Ros/ver_ws', 'TERM_PROGRAM_VERSION': '1.130.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b512f3c1-d287-489b-8ae5-75eb4b70bb93.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/home/ver/home/ver/Ros/ver_ws', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ver/Ros/ver_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ver', 'NAME': 'Anakin', 'WSL_INTEROP': '/run/WSL/5964_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/roone/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/roone/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/roone/AppData/Local/afreeca:/mnt/c/Users/roone/AppData/Local/SOOP:/mnt/c/Users/roone/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ce445c5b69.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/ver/Ros/ver_ws/install/ver_basic:/home/ver/Ros/ver_ws/install/user_interface:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'LOCALHOST', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ver/Ros/ver_ws/build/ver_basic', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ver/Ros/ver_ws/build/ver_basic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages:/home/ver/Ros/ver_ws/build/ver_basic:/home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages:/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ver/Ros/ver_ws/install/user_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'}, 'shell': False}
+[0.783024] (user_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.788360] (user_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.788508] (user_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.788751] (user_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.801296] (-) TimerEvent: {}
+[0.828112] (user_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.901432] (-) TimerEvent: {}
+[0.906608] (ver_basic) StdoutLine: {'line': b'running develop\n'}
+[0.963295] (user_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.969420] (user_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.969627] (user_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.969962] (user_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.971495] (user_interface) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.001564] (-) TimerEvent: {}
+[1.010003] (ver_basic) StdoutLine: {'line': b'running egg_info\n'}
+[1.010346] (ver_basic) StdoutLine: {'line': b'creating ver_basic.egg-info\n'}
+[1.023725] (ver_basic) StdoutLine: {'line': b'writing ver_basic.egg-info/PKG-INFO\n'}
+[1.024086] (ver_basic) StdoutLine: {'line': b'writing dependency_links to ver_basic.egg-info/dependency_links.txt\n'}
+[1.024285] (ver_basic) StdoutLine: {'line': b'writing entry points to ver_basic.egg-info/entry_points.txt\n'}
+[1.024385] (ver_basic) StdoutLine: {'line': b'writing requirements to ver_basic.egg-info/requires.txt\n'}
+[1.024475] (ver_basic) StdoutLine: {'line': b'writing top-level names to ver_basic.egg-info/top_level.txt\n'}
+[1.024602] (ver_basic) StdoutLine: {'line': b"writing manifest file 'ver_basic.egg-info/SOURCES.txt'\n"}
+[1.045428] (ver_basic) StdoutLine: {'line': b"reading manifest file 'ver_basic.egg-info/SOURCES.txt'\n"}
+[1.045812] (ver_basic) StdoutLine: {'line': b"writing manifest file 'ver_basic.egg-info/SOURCES.txt'\n"}
+[1.057004] (ver_basic) StdoutLine: {'line': b'running build_ext\n'}
+[1.057133] (ver_basic) StdoutLine: {'line': b'Creating /home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages/ver-basic.egg-link (link to .)\n'}
+[1.057589] (ver_basic) StdoutLine: {'line': b'Installing action_client script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.057777] (ver_basic) StdoutLine: {'line': b'Installing action_server script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.057872] (ver_basic) StdoutLine: {'line': b'Installing class_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.057962] (ver_basic) StdoutLine: {'line': b'Installing class_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.058220] (ver_basic) StdoutLine: {'line': b'Installing header_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.058424] (ver_basic) StdoutLine: {'line': b'Installing m2_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.058507] (ver_basic) StdoutLine: {'line': b'Installing mpub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.058559] (ver_basic) StdoutLine: {'line': b'Installing msub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.058628] (ver_basic) StdoutLine: {'line': b'Installing mt_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.058785] (ver_basic) StdoutLine: {'line': b'Installing mv_turtle script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.058950] (ver_basic) StdoutLine: {'line': b'Installing my_param script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059004] (ver_basic) StdoutLine: {'line': b'Installing param_async script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059141] (ver_basic) StdoutLine: {'line': b'Installing qos_test_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059211] (ver_basic) StdoutLine: {'line': b'Installing qos_test_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059300] (ver_basic) StdoutLine: {'line': b'Installing service_client script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059389] (ver_basic) StdoutLine: {'line': b'Installing service_server script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059477] (ver_basic) StdoutLine: {'line': b'Installing service_thread_server script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059529] (ver_basic) StdoutLine: {'line': b'Installing simple_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059642] (ver_basic) StdoutLine: {'line': b'Installing tpub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059699] (ver_basic) StdoutLine: {'line': b'Installing user_int_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic\n'}
+[1.059767] (ver_basic) StdoutLine: {'line': b'\n'}
+[1.059849] (ver_basic) StdoutLine: {'line': b'Installed /home/ver/Ros/ver_ws/build/ver_basic\n'}
+[1.059929] (ver_basic) StdoutLine: {'line': b'running symlink_data\n'}
+[1.060001] (ver_basic) StdoutLine: {'line': b'creating /home/ver/Ros/ver_ws/install/ver_basic/share/ament_index\n'}
+[1.060081] (ver_basic) StdoutLine: {'line': b'creating /home/ver/Ros/ver_ws/install/ver_basic/share/ament_index/resource_index\n'}
+[1.060259] (ver_basic) StdoutLine: {'line': b'creating /home/ver/Ros/ver_ws/install/ver_basic/share/ament_index/resource_index/packages\n'}
+[1.060434] (ver_basic) StdoutLine: {'line': b'symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/resource/ver_basic -> /home/ver/Ros/ver_ws/install/ver_basic/share/ament_index/resource_index/packages\n'}
+[1.060479] (ver_basic) StdoutLine: {'line': b'symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/package.xml -> /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic\n'}
+[1.060510] (ver_basic) StdoutLine: {'line': b'creating /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic/launch\n'}
+[1.060539] (ver_basic) StdoutLine: {'line': b'symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/launch/mtsubpub.launch.py -> /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic/launch\n'}
+[1.060569] (ver_basic) StdoutLine: {'line': b'symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/launch/hello.launch.py -> /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic/launch\n'}
+[1.060603] (ver_basic) StdoutLine: {'line': b'symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/launch/param.launch.py -> /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic/launch\n'}
+[1.065206] (user_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.084102] (ver_basic) CommandEnded: {'returncode': 0}
+[1.091135] (ver_basic) JobEnded: {'identifier': 'ver_basic', 'rc': 0}
+[1.101667] (-) TimerEvent: {}
+[1.119589] (user_interface) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.135305] (user_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[1.137823] (user_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.201787] (-) TimerEvent: {}
+[1.271649] (user_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.295517] (user_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.297198] (user_interface) StdoutLine: {'line': b'-- Found action_msgs: 2.0.4 (/opt/ros/jazzy/share/action_msgs/cmake)\n'}
+[1.301932] (-) TimerEvent: {}
+[1.340181] (user_interface) StdoutLine: {'line': b'-- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[1.401997] (-) TimerEvent: {}
+[1.502258] (-) TimerEvent: {}
+[1.602544] (-) TimerEvent: {}
+[1.702772] (-) TimerEvent: {}
+[1.764140] (user_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.802911] (-) TimerEvent: {}
+[1.903179] (-) TimerEvent: {}
+[2.003502] (-) TimerEvent: {}
+[2.084981] (user_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.103680] (-) TimerEvent: {}
+[2.203888] (-) TimerEvent: {}
+[2.304140] (-) TimerEvent: {}
+[2.404439] (-) TimerEvent: {}
+[2.502437] (user_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.503920] (user_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.504502] (-) TimerEvent: {}
+[2.598829] (user_interface) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[2.604606] (-) TimerEvent: {}
+[2.704829] (-) TimerEvent: {}
+[2.805048] (-) TimerEvent: {}
+[2.889925] (user_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[2.905138] (-) TimerEvent: {}
+[2.952638] (user_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.955168] (user_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.967311] (user_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.968211] (user_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.970969] (user_interface) StdoutLine: {'line': b'-- Configuring done (3.0s)\n'}
+[3.005244] (-) TimerEvent: {}
+[3.010463] (user_interface) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[3.019973] (user_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/ver/Ros/ver_ws/build/user_interface\n'}
+[3.029586] (user_interface) CommandEnded: {'returncode': 0}
+[3.030092] (user_interface) JobProgress: {'identifier': 'user_interface', 'progress': 'build'}
+[3.030810] (user_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ver/Ros/ver_ws/build/user_interface', '--', '-j16', '-l16'], 'cwd': '/home/ver/Ros/ver_ws/build/user_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ver', 'GIT_ASKPASS': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ver/Ros/ver_ws/install/user_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ver', 'OLDPWD': '/home/ver/Ros/ver_ws', 'TERM_PROGRAM_VERSION': '1.130.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b512f3c1-d287-489b-8ae5-75eb4b70bb93.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/home/ver/home/ver/Ros/ver_ws', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ver/Ros/ver_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ver', 'NAME': 'Anakin', 'WSL_INTEROP': '/run/WSL/5964_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/roone/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/roone/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/roone/AppData/Local/afreeca:/mnt/c/Users/roone/AppData/Local/SOOP:/mnt/c/Users/roone/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ce445c5b69.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/ver/Ros/ver_ws/install/ver_basic:/home/ver/Ros/ver_ws/install/user_interface:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'LOCALHOST', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ver/Ros/ver_ws/build/user_interface', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ver/Ros/ver_ws/build/ver_basic:/home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages:/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ver/Ros/ver_ws/install/user_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ver/Ros/ver_ws/install/ver_basic:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'}), 'shell': False}
+[3.063168] (user_interface) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[3.063397] (user_interface) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[3.070273] (user_interface) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_user_interface\n'}
+[3.105286] (-) TimerEvent: {}
+[3.205535] (-) TimerEvent: {}
+[3.211641] (user_interface) StdoutLine: {'line': b'running egg_info\n'}
+[3.212756] (user_interface) StdoutLine: {'line': b'creating user_interface.egg-info\n'}
+[3.218747] (user_interface) StdoutLine: {'line': b'[  3%] Built target user_interface__rosidl_generator_type_description\n'}
+[3.225057] (user_interface) StdoutLine: {'line': b'writing user_interface.egg-info/PKG-INFO\n'}
+[3.225429] (user_interface) StdoutLine: {'line': b'writing dependency_links to user_interface.egg-info/dependency_links.txt\n'}
+[3.225796] (user_interface) StdoutLine: {'line': b'writing top-level names to user_interface.egg-info/top_level.txt\n'}
+[3.226210] (user_interface) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[3.226353] (user_interface) StdoutLine: {'line': b"writing manifest file 'user_interface.egg-info/SOURCES.txt'\n"}
+[3.233276] (user_interface) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[3.267746] (user_interface) StdoutLine: {'line': b'[  7%] Built target user_interface__rs\n'}
+[3.275865] (user_interface) StdoutLine: {'line': b"reading manifest file 'user_interface.egg-info/SOURCES.txt'\n"}
+[3.276507] (user_interface) StdoutLine: {'line': b"writing manifest file 'user_interface.egg-info/SOURCES.txt'\n"}
+[3.298389] (user_interface) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_build_user_interface_egg\n'}
+[3.305581] (-) TimerEvent: {}
+[3.405825] (-) TimerEvent: {}
+[3.506067] (-) TimerEvent: {}
+[3.585610] (user_interface) StdoutLine: {'line': b'[  7%] Built target user_interface__cpp\n'}
+[3.606273] (-) TimerEvent: {}
+[3.624761] (user_interface) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/msg/detail/user_int__functions.c.o\x1b[0m\n'}
+[3.625022] (user_interface) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/msg/detail/user_int__type_support.c.o\x1b[0m\n'}
+[3.625305] (user_interface) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/srv/detail/add_and_odd__type_support.c.o\x1b[0m\n'}
+[3.625756] (user_interface) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/msg/detail/user_int__description.c.o\x1b[0m\n'}
+[3.627129] (user_interface) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[3.628438] (user_interface) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/action/detail/fibonacci__description.c.o\x1b[0m\n'}
+[3.628826] (user_interface) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/srv/detail/add_and_odd__description.c.o\x1b[0m\n'}
+[3.629047] (user_interface) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/action/detail/fibonacci__functions.c.o\x1b[0m\n'}
+[3.629319] (user_interface) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_c.dir/rosidl_generator_c/user_interface/srv/detail/add_and_odd__functions.c.o\x1b[0m\n'}
+[3.706375] (-) TimerEvent: {}
+[3.745312] (user_interface) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libuser_interface__rosidl_generator_c.so\x1b[0m\n'}
+[3.806480] (-) TimerEvent: {}
+[3.824520] (user_interface) StdoutLine: {'line': b'[ 25%] Built target user_interface__rosidl_generator_c\n'}
+[3.831593] (user_interface) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.831824] (user_interface) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.831920] (user_interface) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.834289] (user_interface) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.837045] (user_interface) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.838450] (user_interface) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.906614] (-) TimerEvent: {}
+[4.007004] (-) TimerEvent: {}
+[4.107366] (-) TimerEvent: {}
+[4.108422] (user_interface) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interface/msg/user_int__type_support.cpp.o\x1b[0m\n'}
+[4.108734] (user_interface) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interface/srv/add_and_odd__type_support.cpp.o\x1b[0m\n'}
+[4.109216] (user_interface) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interface/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[4.122043] (user_interface) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interface/srv/add_and_odd__type_support.cpp.o\x1b[0m\n'}
+[4.124233] (user_interface) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interface/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[4.124952] (user_interface) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interface/msg/user_int__type_support.cpp.o\x1b[0m\n'}
+[4.182256] (user_interface) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.193400] (user_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interface/msg/detail/user_int__type_support.c.o\x1b[0m\n'}
+[4.195205] (user_interface) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interface/srv/detail/add_and_odd__type_support.c.o\x1b[0m\n'}
+[4.195600] (user_interface) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interface/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[4.202317] (user_interface) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interface/msg/detail/user_int__type_support.cpp.o\x1b[0m\n'}
+[4.204610] (user_interface) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interface/action/detail/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[4.205606] (user_interface) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interface/srv/detail/add_and_odd__type_support.cpp.o\x1b[0m\n'}
+[4.207478] (-) TimerEvent: {}
+[4.277230] (user_interface) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libuser_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.288189] (user_interface) StdoutLine: {'line': b'[ 61%] Built target user_interface__rosidl_typesupport_c\n'}
+[4.307612] (-) TimerEvent: {}
+[4.365751] (user_interface) StdoutLine: {'line': b'[ 61%] Built target user_interface__rosidl_typesupport_introspection_c\n'}
+[4.407792] (-) TimerEvent: {}
+[4.420395] (user_interface) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interface/srv/detail/dds_fastrtps/add_and_odd__type_support.cpp.o\x1b[0m\n'}
+[4.420646] (user_interface) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interface/msg/detail/dds_fastrtps/user_int__type_support.cpp.o\x1b[0m\n'}
+[4.420746] (user_interface) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interface/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[4.507993] (-) TimerEvent: {}
+[4.509492] (user_interface) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interface/action/detail/fibonacci__type_support_c.cpp.o\x1b[0m\n'}
+[4.510828] (user_interface) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interface/srv/detail/add_and_odd__type_support_c.cpp.o\x1b[0m\n'}
+[4.511336] (user_interface) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/user_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interface/msg/detail/user_int__type_support_c.cpp.o\x1b[0m\n'}
+[4.608176] (-) TimerEvent: {}
+[4.708698] (-) TimerEvent: {}
+[4.809119] (-) TimerEvent: {}
+[4.909541] (-) TimerEvent: {}
+[4.995647] (user_interface) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.009689] (-) TimerEvent: {}
+[5.110202] (-) TimerEvent: {}
+[5.135178] (user_interface) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.141845] (user_interface) StdoutLine: {'line': b'[ 76%] Built target user_interface__rosidl_typesupport_cpp\n'}
+[5.174613] (user_interface) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.210308] (-) TimerEvent: {}
+[5.251698] (user_interface) StdoutLine: {'line': b'[ 78%] Built target user_interface__rosidl_typesupport_fastrtps_c\n'}
+[5.289546] (user_interface) StdoutLine: {'line': b'[ 78%] Built target user_interface__rosidl_typesupport_introspection_cpp\n'}
+[5.310406] (-) TimerEvent: {}
+[5.410741] (-) TimerEvent: {}
+[5.441288] (user_interface) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.510860] (-) TimerEvent: {}
+[5.516871] (user_interface) StdoutLine: {'line': b'[ 80%] Built target user_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[5.530803] (user_interface) StdoutLine: {'line': b'[ 80%] Built target user_interface\n'}
+[5.543044] (user_interface) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.610918] (-) TimerEvent: {}
+[5.711208] (-) TimerEvent: {}
+[5.811485] (-) TimerEvent: {}
+[5.911709] (-) TimerEvent: {}
+[6.011958] (-) TimerEvent: {}
+[6.051561] (user_interface) StdoutLine: {'line': b'[ 81%] Built target user_interface__py\n'}
+[6.063570] (user_interface) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_py.dir/rosidl_generator_py/user_interface/msg/_user_int_s.c.o\x1b[0m\n'}
+[6.063727] (user_interface) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_py.dir/rosidl_generator_py/user_interface/srv/_add_and_odd_s.c.o\x1b[0m\n'}
+[6.063767] (user_interface) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/user_interface__rosidl_generator_py.dir/rosidl_generator_py/user_interface/action/_fibonacci_s.c.o\x1b[0m\n'}
+[6.112015] (-) TimerEvent: {}
+[6.211627] (user_interface) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library libuser_interface__rosidl_generator_py.so\x1b[0m\n'}
+[6.212104] (-) TimerEvent: {}
+[6.299017] (user_interface) StdoutLine: {'line': b'[ 89%] Built target user_interface__rosidl_generator_py\n'}
+[6.312269] (-) TimerEvent: {}
+[6.312518] (user_interface) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/user_interface_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/user_interface/_user_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.312682] (user_interface) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/user_interface_s__rosidl_typesupport_c.dir/rosidl_generator_py/user_interface/_user_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.312823] (user_interface) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/user_interface_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/user_interface/_user_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.408742] (user_interface) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/user_interface/user_interface_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.412490] (-) TimerEvent: {}
+[6.442801] (user_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/user_interface/user_interface_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.443026] (user_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/user_interface/user_interface_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.501237] (user_interface) StdoutLine: {'line': b'[100%] Built target user_interface_s__rosidl_typesupport_c\n'}
+[6.509455] (user_interface) StdoutLine: {'line': b'[100%] Built target user_interface_s__rosidl_typesupport_introspection_c\n'}
+[6.509725] (user_interface) StdoutLine: {'line': b'[100%] Built target user_interface_s__rosidl_typesupport_fastrtps_c\n'}
+[6.512639] (-) TimerEvent: {}
+[6.516797] (user_interface) CommandEnded: {'returncode': 0}
+[6.517317] (user_interface) JobProgress: {'identifier': 'user_interface', 'progress': 'install'}
+[6.524055] (user_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ver/Ros/ver_ws/build/user_interface'], 'cwd': '/home/ver/Ros/ver_ws/build/user_interface', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ver', 'GIT_ASKPASS': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ver/Ros/ver_ws/install/user_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ver', 'OLDPWD': '/home/ver/Ros/ver_ws', 'TERM_PROGRAM_VERSION': '1.130.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-b512f3c1-d287-489b-8ae5-75eb4b70bb93.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/node', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', '_colcon_cd_root': '/home/ver/home/ver/Ros/ver_ws', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ver/Ros/ver_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ver', 'NAME': 'Anakin', 'WSL_INTEROP': '/run/WSL/5964_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'PATH': '/home/ver/.vscode-server/bin/1b6a188127eeaf9194f945eb6eb89a657e93c54c/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/roone/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Users/roone/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/roone/AppData/Local/afreeca:/mnt/c/Users/roone/AppData/Local/SOOP:/mnt/c/Users/roone/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-ce445c5b69.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/ver/Ros/ver_ws/install/ver_basic:/home/ver/Ros/ver_ws/install/user_interface:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'LOCALHOST', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ver/Ros/ver_ws/build/user_interface', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ver/Ros/ver_ws/build/ver_basic:/home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages:/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/ver/Ros/ver_ws/install/user_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ver/Ros/ver_ws/install/ver_basic:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up'}), 'shell': False}
+[6.529268] (user_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.529674] (user_interface) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.530305] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/rosidl_interfaces/user_interface\n'}
+[6.535765] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/msg/UserInt.json\n'}
+[6.540996] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/srv/AddAndOdd.json\n'}
+[6.546097] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/action/Fibonacci.json\n'}
+[6.551781] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__functions.h\n'}
+[6.557100] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__struct.h\n'}
+[6.562184] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__type_support.h\n'}
+[6.567040] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/fibonacci.h\n'}
+[6.572729] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__functions.h\n'}
+[6.578065] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__struct.h\n'}
+[6.583241] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__type_support.h\n'}
+[6.588411] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.593489] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/user_int.h\n'}
+[6.598748] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/add_and_odd.h\n'}
+[6.603857] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__functions.h\n'}
+[6.608804] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__struct.h\n'}
+[6.612751] (-) TimerEvent: {}
+[6.613788] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__type_support.h\n'}
+[6.619326] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/library_path.sh\n'}
+[6.625729] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/library_path.dsv\n'}
+[6.631333] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[6.636871] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__rosidl_typesupport_fastrtps_c.h\n'}
+[6.642606] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.647762] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__rosidl_typesupport_fastrtps_c.h\n'}
+[6.653492] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[6.658366] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__rosidl_typesupport_introspection_c.h\n'}
+[6.663328] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.668461] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__rosidl_typesupport_introspection_c.h\n'}
+[6.673752] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__builder.hpp\n'}
+[6.678750] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__struct.hpp\n'}
+[6.684001] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__traits.hpp\n'}
+[6.689459] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__type_support.hpp\n'}
+[6.694432] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/fibonacci.hpp\n'}
+[6.699837] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__builder.hpp\n'}
+[6.704764] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__struct.hpp\n'}
+[6.709765] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__traits.hpp\n'}
+[6.712881] (-) TimerEvent: {}
+[6.714779] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__type_support.hpp\n'}
+[6.719874] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[6.726337] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/user_int.hpp\n'}
+[6.731690] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/add_and_odd.hpp\n'}
+[6.738015] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__builder.hpp\n'}
+[6.743292] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__struct.hpp\n'}
+[6.748518] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__traits.hpp\n'}
+[6.753400] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__type_support.hpp\n'}
+[6.758776] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.763799] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.768916] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.773853] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.779047] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.784610] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/msg/detail/user_int__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.789527] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/include/user_interface/user_interface/srv/detail/add_and_odd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.795005] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/pythonpath.sh\n'}
+[6.800200] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/pythonpath.dsv\n'}
+[6.805920] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[6.810875] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[6.813114] (-) TimerEvent: {}
+[6.815907] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[6.821200] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[6.828646] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/__init__.py\n'}
+[6.835000] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/_user_interface_s.ep.rosidl_typesupport_c.c\n'}
+[6.840193] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/_user_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.845574] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/_user_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.850949] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/__init__.py\n'}
+[6.855960] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/_fibonacci.py\n'}
+[6.861064] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/_fibonacci_s.c\n'}
+[6.866295] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/__init__.py\n'}
+[6.871339] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/_user_int.py\n'}
+[6.876824] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/_user_int_s.c\n'}
+[6.882145] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/__init__.py\n'}
+[6.887278] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/_add_and_odd.py\n'}
+[6.892738] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/_add_and_odd_s.c\n'}
+[6.897802] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_c.so\n'}
+[6.902843] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_fastrtps_c.so\n'}
+[6.907734] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_introspection_c.so\n'}
+[6.913035] (user_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_fastrtps_c.so\n'}
+[6.913175] (-) TimerEvent: {}
+[6.913264] (user_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_introspection_c.so\n'}
+[6.913400] (user_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/user_interface_s__rosidl_typesupport_c.so\n'}
+[6.913521] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/rust_packages/user_interface\n'}
+[6.919130] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/Cargo.toml\n'}
+[6.925299] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/build.rs\n'}
+[6.931286] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/action.rs\n'}
+[6.936657] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/action/rmw.rs\n'}
+[6.942068] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/lib.rs\n'}
+[6.947491] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/msg.rs\n'}
+[6.952621] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/msg/rmw.rs\n'}
+[6.957868] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/srv.rs\n'}
+[6.962995] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/rust/src/srv/rmw.rs\n'}
+[6.968328] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/msg/UserInt.idl\n'}
+[6.973704] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/srv/AddAndOdd.idl\n'}
+[6.979497] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/action/Fibonacci.idl\n'}
+[6.984801] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/msg/UserInt.msg\n'}
+[6.990096] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/srv/AddAndOdd.srv\n'}
+[6.995041] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/action/Fibonacci.action\n'}
+[7.000264] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/package_run_dependencies/user_interface\n'}
+[7.005696] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/parent_prefix_path/user_interface\n'}
+[7.011121] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/ament_prefix_path.sh\n'}
+[7.013411] (-) TimerEvent: {}
+[7.016468] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/ament_prefix_path.dsv\n'}
+[7.021851] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/path.sh\n'}
+[7.028863] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/environment/path.dsv\n'}
+[7.034082] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/local_setup.bash\n'}
+[7.039829] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/local_setup.sh\n'}
+[7.045371] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/local_setup.zsh\n'}
+[7.050592] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/local_setup.dsv\n'}
+[7.055945] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/package.dsv\n'}
+[7.061271] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/ament_index/resource_index/packages/user_interface\n'}
+[7.066676] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[7.072081] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.078082] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.083921] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.089233] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[7.094398] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[7.099767] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[7.104864] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[7.109991] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interfaceConfig.cmake\n'}
+[7.113514] (-) TimerEvent: {}
+[7.115326] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interfaceConfig-version.cmake\n'}
+[7.120660] (user_interface) StdoutLine: {'line': b'-- Symlinking: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/package.xml\n'}
+[7.127204] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_generator_c.so\n'}
+[7.127459] (user_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_generator_c.so" to ""\n'}
+[7.127573] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[7.127842] (user_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.127918] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_introspection_c.so\n'}
+[7.128028] (user_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.128076] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_c.so\n'}
+[7.128175] (user_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_c.so" to ""\n'}
+[7.128279] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.128722] (user_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.128798] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[7.129372] (user_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.129447] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_cpp.so\n'}
+[7.129679] (user_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[7.165801] (user_interface) StdoutLine: {'line': b"Listing '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface'...\n"}
+[7.165957] (user_interface) StdoutLine: {'line': b"Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/__init__.py'...\n"}
+[7.165995] (user_interface) StdoutLine: {'line': b"Listing '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action'...\n"}
+[7.166062] (user_interface) StdoutLine: {'line': b"Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/__init__.py'...\n"}
+[7.166097] (user_interface) StdoutLine: {'line': b"Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/action/_fibonacci.py'...\n"}
+[7.166130] (user_interface) StdoutLine: {'line': b"Listing '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg'...\n"}
+[7.166220] (user_interface) StdoutLine: {'line': b"Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/__init__.py'...\n"}
+[7.166255] (user_interface) StdoutLine: {'line': b"Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/msg/_user_int.py'...\n"}
+[7.166290] (user_interface) StdoutLine: {'line': b"Listing '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv'...\n"}
+[7.166319] (user_interface) StdoutLine: {'line': b"Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/__init__.py'...\n"}
+[7.166350] (user_interface) StdoutLine: {'line': b"Compiling '/home/ver/Ros/ver_ws/install/user_interface/lib/python3.12/site-packages/user_interface/srv/_add_and_odd.py'...\n"}
+[7.169665] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_generator_py.so\n'}
+[7.169881] (user_interface) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ver/Ros/ver_ws/install/user_interface/lib/libuser_interface__rosidl_generator_py.so" to ""\n'}
+[7.170095] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_cExport.cmake\n'}
+[7.170196] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[7.170237] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[7.170396] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[7.170557] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[7.170599] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[7.170659] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_cExport.cmake\n'}
+[7.170765] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[7.170809] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_cppExport.cmake\n'}
+[7.170878] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[7.170949] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[7.171044] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[7.171110] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[7.171164] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_cppExport.cmake\n'}
+[7.171211] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/user_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[7.171305] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_pyExport.cmake\n'}
+[7.171467] (user_interface) StdoutLine: {'line': b'-- Installing: /home/ver/Ros/ver_ws/install/user_interface/share/user_interface/cmake/export_user_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[7.173256] (user_interface) CommandEnded: {'returncode': 0}
+[7.186063] (user_interface) JobEnded: {'identifier': 'user_interface', 'rc': 0}
+[7.186810] (-) EventReactorShutdown: {}

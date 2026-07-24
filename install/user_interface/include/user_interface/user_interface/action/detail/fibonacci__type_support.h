@@ -1,0 +1,1 @@
+/home/ver/Ros/ver_ws/build/user_interface/rosidl_generator_c/user_interface/action/detail/fibonacci__type_support.h

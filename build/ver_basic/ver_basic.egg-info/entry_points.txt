@@ -1,0 +1,22 @@
+[console_scripts]
+action_client = ver_basic.action_client:main
+action_server = ver_basic.action_server:main
+class_pub = ver_basic.class_pub:main
+class_sub = ver_basic.class_sub:main
+header_pub = ver_basic.header_pub:main
+m2_sub = ver_basic.m2_sub:main
+mpub = gong_basic.mpub:main
+msub = gong_basic.msub:main
+mt_sub = ver_basic.mt_sub:main
+mv_turtle = ver_basic.mv_turtle:main
+mv_turtle_ns = ver_basic.mv_turtle_ns:main
+my_param = ver_basic.my_param:main
+param_async = ver_basic.param_async:main
+qos_test_pub = ver_basic.qos_test_pub:main
+qos_test_sub = ver_basic.qos_test_sub:main
+service_client = ver_basic.service_client:main
+service_server = ver_basic.service_server:main
+service_thread_server = ver_basic.service_thread_server:main
+simple_pub = ver_basic.simple_pub:main
+tpub = gong_basic.tpub:main
+user_int_pub = ver_basic.user_int_pub:main

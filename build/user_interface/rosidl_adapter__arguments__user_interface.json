@@ -1,0 +1,8 @@
+{
+  "package_name": "user_interface",
+  "non_idl_tuples": [
+    "/home/ver/Ros/ver_ws/src/user_interface:msg/UserInt.msg",
+    "/home/ver/Ros/ver_ws/src/user_interface:srv/AddAndOdd.srv",
+    "/home/ver/Ros/ver_ws/src/user_interface:action/Fibonacci.action"
+  ]
+}

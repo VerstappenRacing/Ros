@@ -1,0 +1,1 @@
+/home/ver/Ros/ver_ws/build/ver_basic/launch/hello.launch.py

@@ -1,0 +1,45 @@
+running develop
+running egg_info
+creating ver_basic.egg-info
+writing ver_basic.egg-info/PKG-INFO
+writing dependency_links to ver_basic.egg-info/dependency_links.txt
+writing entry points to ver_basic.egg-info/entry_points.txt
+writing requirements to ver_basic.egg-info/requires.txt
+writing top-level names to ver_basic.egg-info/top_level.txt
+writing manifest file 'ver_basic.egg-info/SOURCES.txt'
+reading manifest file 'ver_basic.egg-info/SOURCES.txt'
+writing manifest file 'ver_basic.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages/ver-basic.egg-link (link to .)
+Installing action_client script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing action_server script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing class_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing class_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing header_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing m2_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing mpub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing msub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing mt_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing mv_turtle script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing my_param script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing param_async script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing qos_test_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing qos_test_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing service_client script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing service_server script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing service_thread_server script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing simple_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing tpub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+Installing user_int_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+
+Installed /home/ver/Ros/ver_ws/build/ver_basic
+running symlink_data
+creating /home/ver/Ros/ver_ws/install/ver_basic/share/ament_index
+creating /home/ver/Ros/ver_ws/install/ver_basic/share/ament_index/resource_index
+creating /home/ver/Ros/ver_ws/install/ver_basic/share/ament_index/resource_index/packages
+symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/resource/ver_basic -> /home/ver/Ros/ver_ws/install/ver_basic/share/ament_index/resource_index/packages
+symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/package.xml -> /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic
+creating /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic/launch
+symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/launch/mtsubpub.launch.py -> /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic/launch
+symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/launch/hello.launch.py -> /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic/launch
+symbolically linking /home/ver/Ros/ver_ws/build/ver_basic/launch/param.launch.py -> /home/ver/Ros/ver_ws/install/ver_basic/share/ver_basic/launch

@@ -1,0 +1,1 @@
+/home/ver/Ros/ver_ws/src/ver_basic/setup.py

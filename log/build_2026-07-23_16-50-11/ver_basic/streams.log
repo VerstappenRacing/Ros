@@ -1,0 +1,37 @@
+[0.933s] Invoking command in '/home/ver/Ros/ver_ws/build/ver_basic': PYTHONPATH=/home/ver/Ros/ver_ws/build/ver_basic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ver/Ros/ver_ws/build/ver_basic/build --no-deps symlink_data
+[1.141s] running develop
+[1.267s] running egg_info
+[1.287s] writing ver_basic.egg-info/PKG-INFO
+[1.287s] writing dependency_links to ver_basic.egg-info/dependency_links.txt
+[1.287s] writing entry points to ver_basic.egg-info/entry_points.txt
+[1.288s] writing requirements to ver_basic.egg-info/requires.txt
+[1.288s] writing top-level names to ver_basic.egg-info/top_level.txt
+[1.320s] reading manifest file 'ver_basic.egg-info/SOURCES.txt'
+[1.321s] writing manifest file 'ver_basic.egg-info/SOURCES.txt'
+[1.333s] running build_ext
+[1.334s] Creating /home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages/ver-basic.egg-link (link to .)
+[1.334s] Installing action_client script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.334s] Installing action_server script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.335s] Installing class_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.335s] Installing class_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.335s] Installing header_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.336s] Installing m2_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.336s] Installing mpub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.336s] Installing msub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.336s] Installing mt_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.336s] Installing mv_turtle script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.336s] Installing mv_turtle_ns script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing my_param script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing param_async script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing qos_test_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing qos_test_sub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing service_client script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing service_server script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing service_thread_server script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing simple_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing tpub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] Installing user_int_pub script to /home/ver/Ros/ver_ws/install/ver_basic/lib/ver_basic
+[1.337s] 
+[1.337s] Installed /home/ver/Ros/ver_ws/build/ver_basic
+[1.338s] running symlink_data
+[1.364s] Invoked command in '/home/ver/Ros/ver_ws/build/ver_basic' returned '0': PYTHONPATH=/home/ver/Ros/ver_ws/build/ver_basic/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ver/Ros/ver_ws/install/ver_basic/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ver/Ros/ver_ws/build/ver_basic/build --no-deps symlink_data

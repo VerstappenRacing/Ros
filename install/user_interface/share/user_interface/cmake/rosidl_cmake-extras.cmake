@@ -1,0 +1,1 @@
+/home/ver/Ros/ver_ws/build/user_interface/rosidl_cmake/rosidl_cmake-extras.cmake

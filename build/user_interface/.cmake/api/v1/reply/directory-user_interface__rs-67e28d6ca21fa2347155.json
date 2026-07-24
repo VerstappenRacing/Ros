@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "user_interface__rs",
+		"source" : "/home/ver/Ros/ver_ws/build/user_interface/user_interface__rs"
+	}
+}
