@@ -1,8 +1,12 @@
 package.xml
 setup.cfg
 setup.py
+launch/urdf_display.launch.py
 resource/tf2_basic
+rviz/urdf.rviz
 tf2_basic/__init__.py
+tf2_basic/bb8_magnet_drive.py
+tf2_basic/bb8_mover.py
 tf2_basic/dynamic_turtle_tf2_broadcaster.py
 tf2_basic/static_turtle_tf2_broadcaster.py
 tf2_basic/tf_listener.py
@@ -14,3 +18,7 @@ tf2_basic.egg-info/entry_points.txt
 tf2_basic.egg-info/requires.txt
 tf2_basic.egg-info/top_level.txt
 tf2_basic.egg-info/zip-safe
+urdf/01_myfirst.urdf
+urdf/02_leg_joint.urdf
+urdf/bb8.urdf
+urdf/bb8_realistic.urdf

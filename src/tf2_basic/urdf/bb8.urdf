@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<robot name="bb8">
+
+  <material name="bb8_white">
+    <color rgba="0.95 0.95 0.95 1"/>
+  </material>
+  <material name="bb8_orange">
+    <color rgba="1.0 0.45 0.0 1"/>
+  </material>
+  <material name="bb8_dark">
+    <color rgba="0.1 0.1 0.1 1"/>
+  </material>
+
+  <link name="base_link"/>
+
+  <joint name="base_to_body" type="continuous">
+    <parent link="base_link"/>
+    <child link="body_link"/>
+    <origin xyz="0 0 0.4" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/> </joint>
+
+  <link name="body_link">
+    <visual>
+      <geometry>
+        <sphere radius="0.4"/>
+      </geometry>
+      <material name="bb8_orange"/>
+    </visual>
+  </link>
+
+  <joint name="head_joint" type="continuous">
+    <parent link="body_link"/>
+    <child link="head_link"/>
+    <origin xyz="0 0 0.35" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/> </joint>
+
+  <link name="head_link">
+    <visual>
+      <origin xyz="0 0 0.1" rpy="0 0 0"/>
+      <geometry>
+        <sphere radius="0.28"/>
+      </geometry>
+      <material name="bb8_white"/>
+    </visual>
+    <visual>
+      <origin xyz="0 0 0.0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.05" radius="0.26"/>
+      </geometry>
+      <material name="bb8_dark"/>
+    </visual>
+  </link>
+
+  <joint name="eye_joint" type="fixed">
+    <parent link="head_link"/>
+    <child link="eye_link"/>
+    <origin xyz="0.22 0 0.2" rpy="0 1.27 0"/>
+  </joint>
+
+  <link name="eye_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.06" radius="0.05"/>
+      </geometry>
+      <material name="bb8_dark"/>
+    </visual>
+  </link>
+
+</robot>
