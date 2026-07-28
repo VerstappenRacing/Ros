@@ -19,10 +19,14 @@ from trajectory_msgs.msg import JointTrajectoryPoint
 class DanceManipulator(Node):
     """YAML 자세를 무작위 순서와 오차로 실행한다."""
 
-    def __init__(self) -> None:
-        super().__init__("dance_manipulator")
+    def __init__(
+        self,
+        node_name: str = "dance_manipulator",
+        default_dance_file: str = "",
+    ) -> None:
+        super().__init__(node_name)
 
-        self.declare_parameter("dance_file", "")
+        self.declare_parameter("dance_file", default_dance_file)
         self.declare_parameter("repeat_count", -1)
         self.declare_parameter("random_seed", -1)
         self.declare_parameter("variation_ratio", -1.0)
