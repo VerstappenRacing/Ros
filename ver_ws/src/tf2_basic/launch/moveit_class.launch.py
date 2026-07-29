@@ -9,7 +9,6 @@ from launch.actions import DeclareLaunchArgument
 from launch.substitutions import Command, LaunchConfiguration
 from launch_ros.actions import Node
 from launch_ros.parameter_descriptions import ParameterValue
-from moveit_configs_utils import MoveItConfigsBuilder  # 1. 's' 오타 수정
 
 
 def load_yaml(path: Path) -> dict:
@@ -20,7 +19,6 @@ def load_yaml(path: Path) -> dict:
 
 def generate_launch_description() -> LaunchDescription:
     """실제 설치 경로에서 MoveIt 설정 전체를 읽어 실습 노드에 전달한다."""
-    moveit_config = MoveItConfigsBuilder("open_manipulator_x").to_moveit_configs()
     moveit_config_share = Path(get_package_share_directory("open_manipulator_moveit_config"))
     description_share = Path(get_package_share_directory("open_manipulator_description"))
     moveit_utils_share = Path(get_package_share_directory("moveit_configs_utils"))
@@ -69,59 +67,32 @@ def generate_launch_description() -> LaunchDescription:
     moveit_py_parameters.update(load_yaml(controllers_file))
 
     use_sim_time = LaunchConfiguration("use_sim_time")
+    node_executable = LaunchConfiguration("node_executable")
     robot_description = {
         "robot_description": ParameterValue(
-            Command(["xacro ", str(urdf_xacro)]),
+            Command(
+                [
+                    "xacro ",
+                    str(urdf_xacro),
+                    " use_sim:=",
+                    use_sim_time,
+                ]
+            ),
             value_type=str,
         )
     }
-    
-    robot_state_publisher_node = Node(
-        package="robot_state_publisher",
-        executable="robot_state_publisher",
-        output="screen",
-        parameters=[robot_description, {"use_sim_time": use_sim_time}],
-    )
 
     moveit_py_node = Node(
         package="tf2_basic",
-        executable="moveit_class",
+        executable=node_executable,
         name="open_manipulator_moveit_py",
         output="screen",
         parameters=[
-            moveit_config.robot_description,
-            moveit_config.robot_description_semantic,
-            moveit_config.planning_pipelines,
-            moveit_config.kinematics,
             moveit_py_parameters,
             robot_description,
             {"use_sim_time": use_sim_time},
         ],
     )
-
-    joint_state_publisher_node = Node(
-        package="joint_state_publisher",
-        executable="joint_state_publisher",
-        name="joint_state_publisher",
-        output="screen",
-        parameters=[{"use_sim_time": use_sim_time}],
-    )
-
-    # 2. RViz2 노드에 파라미터 추가
-    rviz_node = Node(
-        package="rviz2",
-        executable="rviz2",
-        name="rviz2",
-        output="screen",
-        parameters=[
-            moveit_config.robot_description,
-            moveit_config.robot_description_semantic,
-            moveit_config.planning_pipelines,
-            moveit_config.kinematics,
-            {"use_sim_time": use_sim_time},
-        ],
-    )
-
     return LaunchDescription(
         [
             DeclareLaunchArgument(
@@ -129,9 +100,13 @@ def generate_launch_description() -> LaunchDescription:
                 default_value="false",
                 description="Gazebo의 /clock 사용 여부",
             ),
-            robot_state_publisher_node,
-            joint_state_publisher_node,
+            DeclareLaunchArgument(
+                "node_executable",
+                default_value="moveit_class",
+                description=(
+                    "tf2_basic setup.py의 console_scripts에 등록된 실행 파일 이름"
+                ),
+            ),
             moveit_py_node,
-            rviz_node,
         ]
     )
