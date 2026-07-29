@@ -36,6 +36,8 @@ setup(
             "dance_manipulator = tf2_basic.dance_manipulator:main",
             "play_recorded_dance = tf2_basic.play_recorded_dance:main",
             "teach_manipulator = tf2_basic.teach_manipulator:main",
+            "moveit_test = tf2_basic.moveit_test:main",
+            "moveit_class = tf2_basic.moveit_class:main",
         ],
     },
 )

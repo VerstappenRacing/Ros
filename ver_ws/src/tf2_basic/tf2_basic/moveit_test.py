@@ -1,9 +1,11 @@
 """MoveItPy로 OpenManipulator-X의 arm과 gripper를 제어한다."""
 
-import time
+import os
+import sys
 
 import rclpy
 from moveit.planning import MoveItPy
+from rclpy.logging import get_logger
 
 
 def plan_and_execute(
@@ -18,53 +20,42 @@ def plan_and_execute(
 
     plan_result = component.plan()
 
-    if not plan_result:
-        print(f"경로 계획 실패: {configuration_name}")
-        return False
-
     moveit.execute(
         plan_result.trajectory,
         controllers=[controller_name],
     )
-
     return True
 
 
 def main() -> None:
     rclpy.init()
-
+    logger = get_logger("moveit_test")
     moveit = MoveItPy(node_name="open_manipulator_moveit_py")
-
     arm = moveit.get_planning_component("arm")
     gripper = moveit.get_planning_component("gripper")
 
-    if not plan_and_execute(
-        moveit,
-        arm,
-        configuration_name="home",
-        controller_name="arm_controller",
-    ):
-        return
-
-    time.sleep(0.5)
-
-    for goal_name in ("open", "close", "open"):
-        if not plan_and_execute(
+    for goal_name in ("home", "init", "home", "init"):
+        plan_and_execute(
+            moveit,
+            arm,
+            configuration_name=goal_name,
+            controller_name="arm_controller",
+        )
+    for goal_name in ("open", "close", "open", "close"):
+        plan_and_execute(
             moveit,
             gripper,
             configuration_name=goal_name,
             controller_name="gripper_controller",
-        ):
-            return
+        )
 
-        time.sleep(0.7)
+    logger.info("실습 완료")
 
-    print("실습 완료")
-    del gripper
-    del arm
-    del moveit
-
-    rclpy.shutdown()
+    # MoveItPy 2.12.4는 MoveItCpp 소멸 중 SIGSEGV가 발생할 수 있다.
+    # 이 일회성 노드는 성공 시 문제가 있는 C++ 소멸자 경로를 우회한다.
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(0)
 
 
 if __name__ == "__main__":
