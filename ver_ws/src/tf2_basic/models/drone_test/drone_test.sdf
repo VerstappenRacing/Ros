@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<sdf version="1.10">
+  <world name="drone_world">
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.8 0.8 0.8 1</ambient><diffuse>0.8 0.8 0.8 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 사실적인 디테일의 쿼드콥터 드론 모델 -->
+    <model name="quadcopter">
+      <pose>0 0 0.5 0 0 0</pose>
+
+      <link name="base_link">
+        <gravity>false</gravity>
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>0.01</ixx><ixy>0</ixy><ixz>0</ixz>
+            <iyy>0.01</iyy><iyz>0</iyz>
+            <izz>0.02</izz>
+          </inertia>
+        </inertial>
+
+        <!-- 1. 중앙 몸체 -->
+        <visual name="body">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry><box><size>0.22 0.16 0.06</size></box></geometry>
+          <material><ambient>0.15 0.15 0.15 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.45 0.45 0.15</size></box></geometry>
+        </collision>
+
+        <!-- 2. 전방 주황색 노즈/카메라 (앞방향 표시) -->
+        <visual name="head">
+          <pose>0.11 0 0.01 0 0 0</pose>
+          <geometry><sphere><radius>0.04</radius></sphere></geometry>
+          <material><ambient>0.9 0.2 0.1 1</ambient><diffuse>1.0 0.3 0.1 1</diffuse></material>
+        </visual>
+
+        <!-- 3. X자 드론 프레임 암 -->
+        <visual name="arm_fr">
+          <pose>0.11 -0.11 0 0 0 -0.785</pose>
+          <geometry><box><size>0.22 0.02 0.015</size></box></geometry>
+          <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
+        </visual>
+        <visual name="arm_fl">
+          <pose>0.11 0.11 0 0 0 0.785</pose>
+          <geometry><box><size>0.22 0.02 0.015</size></box></geometry>
+          <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
+        </visual>
+        <visual name="arm_rr">
+          <pose>-0.11 -0.11 0 0 0 0.785</pose>
+          <geometry><box><size>0.22 0.02 0.015</size></box></geometry>
+          <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
+        </visual>
+        <visual name="arm_rl">
+          <pose>-0.11 0.11 0 0 0 -0.785</pose>
+          <geometry><box><size>0.22 0.02 0.015</size></box></geometry>
+          <material><ambient>0.1 0.1 0.1 1</ambient><diffuse>0.1 0.1 0.1 1</diffuse></material>
+        </visual>
+
+        <!-- 4. 모터 4개 -->
+        <visual name="m0">
+          <pose>0.19 -0.19 0.015 0 0 0</pose>
+          <geometry><cylinder><radius>0.02</radius><length>0.03</length></cylinder></geometry>
+          <material><ambient>0.4 0.4 0.4 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+        </visual>
+        <visual name="m1">
+          <pose>0.19 0.19 0.015 0 0 0</pose>
+          <geometry><cylinder><radius>0.02</radius><length>0.03</length></cylinder></geometry>
+          <material><ambient>0.4 0.4 0.4 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+        </visual>
+        <visual name="m2">
+          <pose>-0.19 -0.19 0.015 0 0 0</pose>
+          <geometry><cylinder><radius>0.02</radius><length>0.03</length></cylinder></geometry>
+          <material><ambient>0.4 0.4 0.4 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+        </visual>
+        <visual name="m3">
+          <pose>-0.19 0.19 0.015 0 0 0</pose>
+          <geometry><cylinder><radius>0.02</radius><length>0.03</length></cylinder></geometry>
+          <material><ambient>0.4 0.4 0.4 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+        </visual>
+
+        <!-- 5. 프로펠러 4개 (전방: 파란색, 후방: 검은색) -->
+        <visual name="p0">
+          <pose>0.19 -0.19 0.035 0 0 0</pose>
+          <geometry><cylinder><radius>0.11</radius><length>0.005</length></cylinder></geometry>
+          <material><ambient>0.1 0.6 0.9 0.8</ambient><diffuse>0.1 0.6 0.9 0.8</diffuse></material>
+        </visual>
+        <visual name="p1">
+          <pose>0.19 0.19 0.035 0 0 0</pose>
+          <geometry><cylinder><radius>0.11</radius><length>0.005</length></cylinder></geometry>
+          <material><ambient>0.1 0.6 0.9 0.8</ambient><diffuse>0.1 0.6 0.9 0.8</diffuse></material>
+        </visual>
+        <visual name="p2">
+          <pose>-0.19 -0.19 0.035 0 0 0</pose>
+          <geometry><cylinder><radius>0.11</radius><length>0.005</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.1 0.8</ambient><diffuse>0.2 0.2 0.2 0.8</diffuse></material>
+        </visual>
+        <visual name="p3">
+          <pose>-0.19 0.19 0.035 0 0 0</pose>
+          <geometry><cylinder><radius>0.11</radius><length>0.005</length></cylinder></geometry>
+          <material><ambient>0.1 0.1 0.1 0.8</ambient><diffuse>0.2 0.2 0.2 0.8</diffuse></material>
+        </visual>
+
+        <!-- 6. 착륙 랜딩 다리 2개 -->
+        <visual name="skid_l">
+          <pose>0 0.08 -0.06 0 0 0</pose>
+          <geometry><box><size>0.26 0.015 0.06</size></box></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.3 0.3 0.3 1</diffuse></material>
+        </visual>
+        <visual name="skid_r">
+          <pose>0 -0.08 -0.06 0 0 0</pose>
+          <geometry><box><size>0.26 0.015 0.06</size></box></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.3 0.3 0.3 1</diffuse></material>
+        </visual>
+
+      </link>
+
+      <!-- 키보드 제어 플러그인 -->
+      <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl">
+        <topic>/cmd_vel</topic>
+      </plugin>
+
+    </model>
+
+  </world>
+</sdf>
