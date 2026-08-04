@@ -10,10 +10,10 @@ def main():
     file_path = Path(__file__).parent
     pipeline = (
         "v4l2src device=/dev/video0 ! "
-        "image/jpeg,width=640,height=480,framerate=30/1 ! "
+        "image/jpeg, width=640, height=480, framerate=30/1 ! "
         "jpegdec ! "
         "videoconvert ! "
-        "video/x-raw,format=BGR ! "
+        "video/x-raw, format=BGR ! "
         "appsink drop=true sync=false"
     )
     cap = cv2.VideoCapture(pipeline, cv2.CAP_GSTREAMER)
