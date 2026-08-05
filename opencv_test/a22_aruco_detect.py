@@ -1,43 +1,33 @@
-from pathlib import Path
 import cv2
 
-def main():
-    file_path = Path(__file__).parent
-    pipeline = (
-        "v4l2src device=/dev/video0 ! "
-        "image/jpeg, width=640, height=480, framerate=30/1 ! "
-        "jpegdec ! "
-        "videoconvert ! "
-        "video/x-raw, format=BGR ! "
-        "appsink drop=true sync=false"
-    )
-    cap = cv2.VideoCapture(pipeline, cv2.CAP_GSTREAMER)
-
+# video0부터 video3까지 차례대로 화면 열기 시도
+for dev_id in range(4):
+    print(f"\n[알림] /dev/video{dev_id} 테스트 시작...")
+    cap = cv2.VideoCapture(dev_id, cv2.CAP_V4L2)
+    
     if not cap.isOpened():
-        print("카메라를 열 수 없습니다. 파이프라인을 확인해 주세요.")
-        return
+        print(f" -> /dev/video{dev_id}: 장치를 열 수 없음")
+        continue
 
-    # ArUco dictionary & parameters
-    dictionary = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_4X4_50)
-    parameters = cv2.aruco.DetectorParameters_create()
+    # 카메라 포맷 설정 (MJPEG 포맷 강제 지정)
+    cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
-    while True:
-        ret, frame = cap.read()
-        if not ret:
-            print("프레임을 불러오지 못했습니다.")
-            break
-
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        corners, ids, rejected = cv2.aruco.detectMarkers(gray, dictionary, parameters=parameters)
-
-        if ids is not None:
-            cv2.aruco.drawDetectedMarkers(frame, corners, ids)
-
-        cv2.imshow("Camera", frame)
-        if cv2.waitKey(1) == ord("q"):
-            break
-
-    cv2.destroyAllWindows()
-
-if __name__ == "__main__":
-    main()
+    ret, frame = cap.read()
+    if ret and frame is not None:
+        print(f"★ /dev/video{dev_id} 연결 성공! 화면이 열립니다.")
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                break
+            cv2.imshow(f"Camera (/dev/video{dev_id})", frame)
+            if cv2.waitKey(1) == ord('q'):
+                break
+        cap.release()
+        cv2.destroyAllWindows()
+        break
+    else:
+        print(f" -> /dev/video{dev_id}: 영상 데이터를 읽을 수 없음")
+    
+    cap.release()
