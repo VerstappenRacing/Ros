@@ -37,3 +37,7 @@ parameter 변수. process 여러개 운동
 launch
     노드 여러개
     파라미터 로드(파라미터, 파일 붙여넣기 .yaml)
+
+#orb keypoints와 descriptor를 사용해서 임이의 물체를 검출한다
+사진 찍어서 orb로 얻고 카메라 영상을 사용
+a34와 camer_pub을 활용해서 작성
